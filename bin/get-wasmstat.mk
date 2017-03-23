@@ -5,18 +5,18 @@ BINARYEN_FILES_WINDOWS = \
 	bin/wasm-as.exe \
 	bin/wasm-opt.exe \
 	bin/wasm.js \
-	src
-        $(NULL)
+	src \
+	$(NULL)
 
 BINARYEN_FILES_MAC_LINUX = \
 	bin/asm2wasm \
-        bin/s2wasm \
-        bin/wasm-dis \
-        bin/wasm-as \
-        bin/wasm-opt \
-        bin/wasm.js \
-        src \
-        $(NULL)
+	bin/s2wasm \
+	bin/wasm-dis \
+	bin/wasm-as \
+	bin/wasm-opt \
+	bin/wasm.js \
+	src \
+	$(NULL)
 
 default: init windows linux mac
 
